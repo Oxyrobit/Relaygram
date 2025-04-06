@@ -68,6 +68,7 @@ Le fichier `.env` doit contenir les éléments suivants :
 - `MODE` : `dev` ou `prod`
 - `SOURCE_CHANNEL_ID` : identifiant du canal source (utilisé en prod uniquement)
 - `TARGET_CHANNEL_ID` : identifiant du canal cible (toujours utilisé)
+- `LANG` : `fr` ou `en`
 
 ---
 
@@ -81,7 +82,7 @@ Utilise cette commande une seule fois (ou après modification du Dockerfile) :
 ### ▶️ Lancement interactif (dev)
 
 Permet de tester et choisir un canal via menu :
-- `docker compose run --rm telegram-downloader`
+- `docker compose run --rm relaygram`
 
 ### 🚀 Lancement automatique (prod)
 

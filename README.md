@@ -88,7 +88,7 @@ docker compose build
 Run the bot in development mode. You'll be able to choose the source channel manually:
 
 ```bash
-docker compose run --rm telegram-downloader
+docker compose run --rm relaygram
 ```
 
 ### 🚀 Automatic launch (prod mode)
