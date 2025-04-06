@@ -39,7 +39,7 @@ async def get_channel_prod():
     async for dialog in client.iter_dialogs():
         if dialog.is_channel and dialog.entity.id == source_channel_id:
             print(f"✅ {T['source_found']} : {dialog.name} (ID: {dialog.entity.id})")
-
+            return dialog.entity
     raise ValueError(f"❌ {T['source_not_found']} {source_channel_id}")
 
 
