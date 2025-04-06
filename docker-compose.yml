@@ -1,0 +1,10 @@
+services:
+  telegram-downloader:
+    build: .
+    container_name: telegram_downloader
+    env_file:
+      - .env
+    volumes:
+      - ./downloads:/app/downloads
+    stdin_open: true
+    tty: true
