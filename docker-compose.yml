@@ -1,7 +1,7 @@
 services:
   telegram-downloader:
     build: .
-    container_name: telegram_downloader
+    container_name: relaygram
     env_file:
       - .env
     volumes:
